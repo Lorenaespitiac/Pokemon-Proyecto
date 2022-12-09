@@ -1,7 +1,9 @@
 @import '../../../config-scss/rem-calc.scss';
 
 $padding: rem-calc(20);
-:host{
+
+:host {
+    .listagem {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -21,6 +23,9 @@ $padding: rem-calc(20);
 
         border-radius: rem-calc(10);
 
+        text-decoration: none;
+        color: var(--azul);
+        
         &_status {
             h2{
                 font-size: rem-calc(22);
@@ -36,7 +41,7 @@ $padding: rem-calc(20);
                 flex-direction: column;
 
                 li{
-                    background: var(--amarillo);
+                    background: var(--secundary-color);
                     font-size: rem-calc(10);
 
                     display: flex;
@@ -72,4 +77,5 @@ $padding: rem-calc(20);
             }
         }
    } 
+    }
 }
